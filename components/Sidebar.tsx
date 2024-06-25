@@ -6,6 +6,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React from 'react'
+import Footer from './Footer'
 
 /* Criar uma sideBar com css condicional */
 /* Estudar mais sobre o cn */
@@ -63,7 +64,7 @@ const Sidebar = ({user}: SiderbarProps) => {
         USER
       </nav>
 
-      FOOTER
+      <Footer user={user}/>
     </section>
   )
 }
